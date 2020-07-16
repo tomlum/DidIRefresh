@@ -1,0 +1,162 @@
+<style type="text/css">
+  body {
+    margin: 0px;
+    box-sizing: border-box;
+    border-left: solid 10px #8ce4fd;
+    border-right: solid 10px #8ce4fd;
+    background-color: #222;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size: 16px;
+  }
+  #mainPopup {
+    color: #d9d9d9;
+    font-family: Arial black;
+    font-weight: bold;
+    padding-top: 6px;
+    height: 230px;
+    width: 190px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #title {
+    text-align: center;
+    margin: 0px;
+  }
+
+  #slider-container {
+    position: relative;
+    cursor: pointer;
+    border: solid 3px #999;
+    background-color: #000;
+    position: relative;
+    width: 35px;
+    height: 15px;
+    border-radius: 15px;
+    margin: 0px 10px;
+  }
+  .slider-button-off {
+    right: -1px !important;
+  }
+  #slider-button {
+    position: absolute;
+    background-color: #d9d9d9;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    right: 21px;
+  }
+  .slider-button-transition {
+    transition: right 0.2s ease-in-out;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  #toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #slider {
+    color: #d9d9d9;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  i {
+    font-weight: 100;
+  }
+  #made-by {
+    margin-top: 7px;
+    margin-bottom: 7px;
+  }
+  a {
+    color: #dfdfdf;
+  }
+  a:hover {
+    color: #ffffff;
+  }
+  a:active {
+    color: #ffffff;
+  }
+  .numberButton {
+    margin: 0px 10px;
+  }
+  .selected {
+    border-style: inset;
+  }
+
+  h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+</style>
+<div id="mainPopup">
+  <script src="./src/scripts/toggle.js"></script>
+  <h3 id="title">
+    <b>Did I Refresh? 🤔</b>
+  </h3>
+
+  <div id="toggle">
+    <div id="slider">
+      OFF
+      <div id="slider-container">
+        <div id="slider-button"></div>
+      </div>
+      ON
+    </div>
+  </div>
+
+  <h3>
+    <u># of Emojis</u>
+  </h3>
+  <div style="display: flex;">
+    <div
+      id="id=click1"
+      style="display: flex; flex-direction: column; margin: 0px 3px;"
+    >
+      <label
+        style="display: flex; justify-content: center; margin-left: 3px;"
+        for="radio1"
+        >1</label
+      >
+      <input type="radio" id="radio1" name="emojicount" value="1" />
+    </div>
+    <div
+      id="id=click2"
+      style="display: flex; flex-direction: column; margin: 0px 3px;"
+    >
+      <label
+        style="display: flex; justify-content: center; margin-left: 3px;"
+        for="radio2"
+        >2</label
+      >
+      <input type="radio" id="radio2" name="emojicount" value="2" />
+    </div>
+    <div
+      id="id=click3"
+      style="display: flex; flex-direction: column; margin: 0px 3px;"
+    >
+      <label
+        style="display: flex; justify-content: center; margin-left: 3px;"
+        for="radio3"
+        >3</label
+      >
+      <input type="radio" id="radio3" name="emojicount" value="3" />
+    </div>
+  </div>
+
+  <i id="made-by" style="margin-top: 40px;">
+    Made by
+    <a href="/">
+      Tom Lum
+    </a>
+  </i>
+  <br />
+</div>
